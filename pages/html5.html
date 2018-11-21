@@ -131,9 +131,9 @@
 								</ul>
 							</li>
 
-							<li class="dropdown"><a href="#">Recursos <i class="fa fa-angle-down"></i></a>
+							<li class="dropdown"><a href="recursos.html">Recursos <i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
-									<li><a href="html5.html">HTML5</a></li>
+									<li><a href="#">HTML5</a></li>
 									<li><a href="css3.html">CSS3</a></li>
 									<li><a href="bootstrap.html">BootStrap</a></li>
 								</ul>
@@ -165,30 +165,212 @@
 		<section id="home-slider">
 			<div class="container">
 				<div class="row">
-					<div class="main-slider-rec">
+					<div class="main-slider-ej2">
 						<div class="slide-text-rec">
-							<p><h1>Recursos:</h1>
-							<h3>¿Qué es [HTML5 ; CSS3 ; BootStrap]?</h3>
-							<ol type="1">
-									<br><li><b>HTML5</b> (Hyper Text Markup Lenguage):</li>
-									Es un <b>lenguje markup</b> (o "de etiqueta") usado para estructurar y presentar contenido para la web.
-									<br><br>
-									<li><b>CSS3</b> (Cascading Style Sheets):</li>
-									Es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML o XML. Sirve para <b>definir la estética de un sitio web</b>, en un documento externo, y eso mismo permite que modificando ese documento (la hoja CSS) podamos cambiar la estética entera de un sitio web.
-									<br><br>
-									<li><b>BootStrap:</b></li>
-									Es uno de los <b>frameworks</b> más famosos y uno de los más utilizados. Es una excelente herramienta para crear interfaces de usuario limpias y totalmente <b>adaptables</b> a todo tipo de dispositivos y pantallas, sea cual sea su tamaño.
+							<p>
+								<h1><b>HTML5</b></h1>
+									<h1>"Hola Mundo" Pantilla mínima de un arcivo index.html</h1>
 
-							</ol>
-									<h3>¿Dónde me documento?</h3>
-									 <ol>
-  										<li><a target="_blank" href="https://hipertextual.com/archivo/2013/05/entendiendo-html5-guia-para-principiantes/">Hipertextual</a> (Sobre HTML5)</li>
-  										<li><a target="_blank" href="https://raiolanetworks.es/blog/que-es-bootstrap/">Raiola Nerworks</a> (Sobre Bootstrap)</li>
-  										<li><a target="_blank" href="https://www.ecured.cu/CSS3">Ecured</a> (Sobre CSS3)</li>
-  										<li><a target="_blank" href="https://www.w3schools.com/">W3Schools</a></li>
-									</ol>  (Listado básico de enlaces: páginas oficiales, de documentación, ayuda y o ejemplos)
+								 <xmp class=html-docu>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
 
-								<br><a href="html5.html" class="btn btn-common">HTML5</a> <a href="css3.html" class="btn btn-common">CSS3</a> <a href="bootstrap.html" class="btn btn-common">Bootstap</a>
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html> 
+								 </xmp>
+
+								 <br>
+								 <h4>-Div</h4>
+									La etiqueta Div define una división o una sección en un documento HTML. Se usa frecuentemente como una sección que contiene otros elementos HTML para modificarlos con CSS o realizar ciertas tareas con JavaScript.
+<xmp class=html-docu>
+<div style="background-color:lightblue">
+  <h3>This is a heading</h3>
+  <p>This is a paragraph.</p>
+</div>  
+	</xmp>
+
+								<div class=html-docu-vista>
+									 <div style="background-color:lightblue">
+  										<h3>This is a heading</h3>
+ 									 	<p>This is a paragraph.</p>
+									</div> 
+								</div>
+
+								<br><br><h1>"Inputs" Ejemplos de elmentos de entrada o navegación</h1>
+								<h4>-Botón normal</h4>
+<xmp class=html-docu><button type="button" 
+class="btn btn-primary">Click me!</button>
+</xmp>
+								<button type="button" class="btn btn-primary">Click me!</button>
+								
+								<br><br><h4>-Botón radial</h4>
+								 <button onclick="checked()">Sí</button>
+
+								<br><br><h4>-Botón de selección.</h4>
+<xmp class=html-docu><form>
+
+<input type="radio" name="color" 
+value="blue" checked> Blue<br>
+
+<input type="radio" name="color" 
+value="Red"> Red<br>
+
+<input type="radio" name="color" 
+value="violet"> Violet  
+
+</form> 
+</xmp>
+
+
+								
+							<br><div class=html-docu-vista>
+								<form>
+  									<input type="radio" name="color" value="blue" checked> Blue<br>
+ 									 <input type="radio" name="color" value="Red"> Red<br>
+  									<input type="radio" name="color" value="violet"> Violet  
+								</form> 
+							</div>
+
+							<br><br><h4>-Menú de selección desplegable</h4>
+<xmp class=html-docu><select>
+  <option value="ana">Ana</option>
+  <option value="phara">Phara</option>
+  <option value="mercy">Mercy</option>
+  <option value="d.va">D.va</option>
+</select>
+</xmp>
+
+							<br><div class=html-docu-vista>
+							<select>
+  								<option value="ana">Ana</option>
+  								<option value="phara">Phara</option>
+  								<option value="mercy">Mercy</option>
+  								<option value="d.va">D.va</option>
+							</select>
+							</div>
+
+							<br><br><h4>-Panel de entrada de texto</h4>
+<xmp class=html-docu><form>
+
+First name: <input type="text" 
+name="FirstName" value="Ana"><br>
+
+Last name: <input type="text" 
+name="LastName" value="Amari"><br>
+
+<input type="submit" value="Send">
+
+</form>
+</xmp>
+
+						<br><div class=html-docu-vista>
+							<form>
+								First name: <input type="text" name="FirstName" value="Ana"><br>
+								Last name: <input type="text" name="LastName" value="Amari"><br>
+								<input type="submit" value="Send">
+							</form>
+							</div>
+
+							<br><br><h4>-Slider</h4>
+<xmp class=html-docu>HTML:
+
+Round Slider:
+<input type="range" min="1" max="50" value="50" 
+class="slider" id="myRange">
+
+CSS:
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+</xmp>
+							<br><div class="slidecontainer html-docu-vista">
+  								Round Slider:
+  								<input type="range" min="1" max="50" value="50" class="slider" id="myRange">
+							</div>
+
+
+
+							<br><h1>"Outputs" Ejemplos de elementos de visionado de datos</h1>
+							<h4>-Campo de texto:</h4>
+
+							Los encabezados en HTML están definidos con etiquetas h1 a h6:
+<xmp class=html-docu><div>
+<h1>Esto es H1</h1>
+<h2>Esto es H2</h2>
+<h3>Esto es H3</h3>
+</div>
+</xmp>
+							<div class=html-docu-vista>
+							<h1>Esto es H1</h1>
+							<h2>Esto es H2</h2>
+							<h3>Esto es H3</h3>
+							</div>
+
+							Tablas
+							 <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+							<table>
+							  <tr>
+							    <th scope="col">Nombre producto</th>
+							    <th scope="col">Precio unitario</th>
+							    <th scope="col">Unidades</th>
+							    <th scope="col">Subtotal</th>
+							  </tr>
+							 
+							  <tr>
+							    <td>Reproductor MP3 (80 GB)</td>
+							    <td>192.02</td>
+							    <td>1</td>
+							    <td>192.02</td>
+							  </tr>
+							 
+							  <tr>
+							    <td>Fundas de colores</td>
+							    <td>2.50</td>
+							    <td>5</td>
+							    <td>12.50</td>
+							  </tr>
+							 
+							  <tr>
+							    <td>Reproductor de radio &amp; control remoto</td>
+							    <td>12.99</td>
+							    <td>1</td>
+							    <td>12.99</td>
+							  </tr>
+							 
+							  <tr>
+							    <th scope="row">TOTAL</th>
+							    <td>-</td>
+							    <td>7</td>
+							    <td><strong>207.51</strong></td>
+							  </tr>
+							</table>
+
+
 							</p>
 							<!--<a href="#" class="btn btn-common">Empecemos</a>-->
 						</div>
