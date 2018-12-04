@@ -548,6 +548,7 @@ ul.sub-menu {
 
 #home-slider .main-slider {
   position: relative;
+  height: 450px;
 }
 
 #home-slider .main-slider-rec {
@@ -578,9 +579,25 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
+  position: absolute;
   top: 50px;
   left: 0;
   width: 600px;
+}
+
+.main-content {
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-color: white;
+  width: 38%;
+  position: relative;
+  margin-left: 22%;
+}
+
+.main-bg {
+  background-color: rgba(051, 043, 061, 0.5);
+  padding: 65px;
 }
 
 #home-slider .slide-text-rec{
@@ -588,6 +605,7 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
+  position: absolute;
   top: 50px;
   left: 0;
   width: 80%;
@@ -598,6 +616,7 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
+  position: absolute;
   top: 80px;
   left: 0;
   width: 450px;
@@ -608,23 +627,22 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
+  position: absolute;
   top: 40px;
   left: 0;
   width: 80%;
 }
 
-#home-slider .html-docu{
+.html-docu{
   border: 5px solid lightgray;
   border-radius: 7px;
   background-color: lightgray;
-  width: 45%
 }
 
-#home-slider .html-docu-vista{
+.html-docu-vista{
   border: 5px solid grey;
   border-radius: 7px;
   background-color: grey;
-  width: 45%
 }
 
 .animate-in .slide-text {
