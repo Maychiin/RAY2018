@@ -171,7 +171,7 @@
 								<h1><b>HTML5</b></h1>
 									<h1>"Hola Mundo" Pantilla mínima de un arcivo index.html</h1>
 
-								 <xmp class=html-docu>
+								 <xmp class="html-docu">
 <!DOCTYPE html>
 <html>
 <head>
@@ -189,15 +189,15 @@
 								 <br>
 								 <h4>-Div</h4>
 									La etiqueta Div define una división o una sección en un documento HTML. Se usa frecuentemente como una sección que contiene otros elementos HTML para modificarlos con CSS o realizar ciertas tareas con JavaScript.
-<xmp class=html-docu>
-<div style="background-color:lightblue">
+<xmp class="html-docu">
+<div style="background-color:#b3e6ff">
   <h3>This is a heading</h3>
   <p>This is a paragraph.</p>
 </div>  
 	</xmp>
 
-								<div class=html-docu-vista>
-									 <div style="background-color:lightblue">
+								<div class="html-docu-vista">
+									 <div style="background-color:#b3e6ff">
   										<h3>This is a heading</h3>
  									 	<p>This is a paragraph.</p>
 									</div> 
@@ -205,7 +205,7 @@
 
 								<br><br><h1>"Inputs" Ejemplos de elmentos de entrada o navegación</h1>
 								<h4>-Botón normal</h4>
-<xmp class=html-docu><button type="button" 
+<xmp class="html-docu"><button type="button" 
 class="btn btn-primary">Click me!</button>
 </xmp>
 								<button type="button" class="btn btn-primary">Click me!</button>
@@ -214,7 +214,7 @@ class="btn btn-primary">Click me!</button>
 								 <button onclick="checked()">Sí</button>
 
 								<br><br><h4>-Botón de selección.</h4>
-<xmp class=html-docu><form>
+<xmp class="html-docu"><form>
 
 <input type="radio" name="color" 
 value="blue" checked> Blue<br>
@@ -230,7 +230,7 @@ value="violet"> Violet
 
 
 								
-							<br><div class=html-docu-vista>
+							<br><div class="html-docu-vista">
 								<form>
   									<input type="radio" name="color" value="blue" checked> Blue<br>
  									 <input type="radio" name="color" value="Red"> Red<br>
@@ -239,7 +239,7 @@ value="violet"> Violet
 							</div>
 
 							<br><br><h4>-Menú de selección desplegable</h4>
-<xmp class=html-docu><select>
+<xmp class="html-docu"><select>
   <option value="ana">Ana</option>
   <option value="phara">Phara</option>
   <option value="mercy">Mercy</option>
@@ -247,7 +247,7 @@ value="violet"> Violet
 </select>
 </xmp>
 
-							<br><div class=html-docu-vista>
+							<br><div class="html-docu-vista">
 							<select>
   								<option value="ana">Ana</option>
   								<option value="phara">Phara</option>
@@ -257,7 +257,7 @@ value="violet"> Violet
 							</div>
 
 							<br><br><h4>-Panel de entrada de texto</h4>
-<xmp class=html-docu><form>
+<xmp class="html-docu"><form>
 
 First name: <input type="text" 
 name="FirstName" value="Ana"><br>
@@ -270,7 +270,7 @@ name="LastName" value="Amari"><br>
 </form>
 </xmp>
 
-						<br><div class=html-docu-vista>
+						<br><div class="html-docu-vista">
 							<form>
 								First name: <input type="text" name="FirstName" value="Ana"><br>
 								Last name: <input type="text" name="LastName" value="Amari"><br>
@@ -279,7 +279,7 @@ name="LastName" value="Amari"><br>
 							</div>
 
 							<br><br><h4>-Slider</h4>
-<xmp class=html-docu>HTML:
+<xmp class="html-docu">HTML:
 
 Round Slider:
 <input type="range" min="1" max="50" value="50" 
@@ -313,63 +313,178 @@ CSS:
 							<h4>-Campo de texto:</h4>
 
 							Los encabezados en HTML están definidos con etiquetas h1 a h6:
-<xmp class=html-docu><div>
+<xmp class="html-docu"><div>
 <h1>Esto es H1</h1>
 <h2>Esto es H2</h2>
 <h3>Esto es H3</h3>
 </div>
 </xmp>
-							<div class=html-docu-vista>
+							<div class="html-docu-vista">
 							<h1>Esto es H1</h1>
 							<h2>Esto es H2</h2>
 							<h3>Esto es H3</h3>
 							</div>
 
-							Tablas
-							 <!-- Tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
-
+							<br><br><h4>-Tablas:</h4>
+							
+<xmp class="html-docu"><table>
+	<tr>
+		<th>Héroe.</th>
+		<th>Mercy</th>
+		<th>Ana</th>
+		<th>Zenytta</th>
+	</tr>
+	<tr>
+		<th>Sanación.</th>
+		<td>19.564</td>
+		<td>21.845</td>
+		<td>9.862</td>
+	</tr>
+	<tr>
+		<th>Eliminaciones.</th>
+		<td>0</td>
+		<td>3</td>
+		<td>7</td>
+	</tr>
+	<tr>
+		<th>Daño realizado.</th>
+		<td>265</td>
+		<td>1.585</td>
+		<td>5.465</td>
+	</tr>
+</table>
+</xmp>
+						<div class="html-docu-vista">
 							<table>
 							  <tr>
-							    <th scope="col">Nombre producto</th>
-							    <th scope="col">Precio unitario</th>
-							    <th scope="col">Unidades</th>
-							    <th scope="col">Subtotal</th>
+							    <th>Héroe.</th>
+							    <th>Mercy</th>
+							    <th>Ana</th>
+							    <th>Zenytta</th>
 							  </tr>
-							 
 							  <tr>
-							    <td>Reproductor MP3 (80 GB)</td>
-							    <td>192.02</td>
-							    <td>1</td>
-							    <td>192.02</td>
+							    <th>Sanación.</th>
+							    <td>19.564</td>
+							    <td>21.845</td>
+							    <td>9.862</td>
 							  </tr>
-							 
 							  <tr>
-							    <td>Fundas de colores</td>
-							    <td>2.50</td>
-							    <td>5</td>
-							    <td>12.50</td>
-							  </tr>
-							 
-							  <tr>
-							    <td>Reproductor de radio &amp; control remoto</td>
-							    <td>12.99</td>
-							    <td>1</td>
-							    <td>12.99</td>
-							  </tr>
-							 
-							  <tr>
-							    <th scope="row">TOTAL</th>
-							    <td>-</td>
+							    <th>Eliminaciones.</th>
+							    <td>0</td>
+							    <td>3</td>
 							    <td>7</td>
-							    <td><strong>207.51</strong></td>
+							  </tr>
+							  <tr>
+							    <th>Daño realizado.</th>
+							    <td>265</td>
+							    <td>1.585</td>
+							    <td>5.465</td>
 							  </tr>
 							</table>
+						</div>
 
+						<br><br><h4>-Imágenes:</h4>
+
+						<p>Las imagenes pueden mejorar la apariencia y el diseño de una página web.</p>
+
+<xmp class="html-docu">HTML
+<img src="../resources/image/home/slider/oh.png" 
+class="img-ej2" alt="Bunny Girl">
+
+CSS
+.img-ej2 {
+  width: 20%;
+}
+</xmp>
+						<br><div class="html-docu-vista">
+							<img src="../resources/image/home/slider/oh.png" class="img-ej2" alt="Bunny Girl">
+						</div>
+
+						<br><br><h4>-Barras de progreso:</h4>
+
+<xmp class="html-docu"><div class="progress">
+
+<div class="progress-bar progress-bar-info" 
+role="progressbar" aria-valuenow="40" 
+aria-valuemin="0" aria-valuemax="100" 
+style="width: 40%">
+
+40% Complete                    		
+</div>
+
+</div>
+</xmp>
+							
+							<div class="html-docu-vista">
+							<div class="progress">
+                    			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        		40% Complete                    		
+                        	</div></div>
+                        	</div>
+
+							
+                        	<br><h1>"Nuestro primer modal"</h1>
+                        	<p>Un modal es un cuadro de diálogo/ventana emergente que se muestra por encima de la página actual. 
+                        	<br>A continuación nos encontramos con un modal creado con Bootstrap, evitando así usar JavaScrip para su utilización.</p>
+							
+<xmp class="html-docu"><!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg"
+data-toggle="modal" 
+data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" 
+role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" 
+data-dismiss="modal">&times;</button>
+<h4 class="modal-title">
+¡Atención!</h4>
+</div>
+<div class="modal-body">
+<p> Texto del modal aquí. </p>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default"
+data-dismiss="modal">Close</button>
+</div>
+</div>
+
+</div>
+</div>
+</xmp>
+
+						<div class="html-docu-vista"><!-- Trigger the modal with a button -->
+							<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+							<!-- Modal -->
+							<div id="myModal" class="modal fade" role="dialog">
+							  <div class="modal-dialog">
+
+							    <!-- Modal content-->
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal">&times;</button>
+							        <h4 class="modal-title">¡Atención!</h4>
+							      </div>
+							      <div class="modal-body">
+							        <p> Texto del modal aquí. </p>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							      </div>
+							    </div>
+
+							  </div>
+							</div>
+						</div>
+
+							<br><a href="recursos.html" class="btn btn-common">Recursos</a> 
+							<a href="html5.html" class="btn btn-common">Estás Aquí</a> <a href="css3.html" class="btn btn-common">CSS3</a> <a href="bootstrap.html" class="btn btn-common">Bootstrap</a></p>
 
 							</p>
 							<!--<a href="#" class="btn btn-common">Empecemos</a>-->
