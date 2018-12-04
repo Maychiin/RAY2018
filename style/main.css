@@ -548,7 +548,6 @@ ul.sub-menu {
 
 #home-slider .main-slider {
   position: relative;
-  height: 450px;
 }
 
 #home-slider .main-slider-rec {
@@ -579,7 +578,6 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
-  position: absolute;
   top: 50px;
   left: 0;
   width: 600px;
@@ -590,7 +588,6 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
-  position: absolute;
   top: 50px;
   left: 0;
   width: 80%;
@@ -601,7 +598,6 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
-  position: absolute;
   top: 80px;
   left: 0;
   width: 450px;
@@ -612,7 +608,6 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
-  position: absolute;
   top: 40px;
   left: 0;
   width: 80%;
