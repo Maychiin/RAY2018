@@ -7,9 +7,9 @@
   Version: 1.1
   */
 
-  @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-  @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-  @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+  @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 
   body {
     background: url(../resources/image/home/slider-bg.png);
@@ -548,6 +548,7 @@ ul.sub-menu {
 
 #home-slider .main-slider {
   position: relative;
+  height: 450px;
 }
 
 #home-slider .main-slider-rec {
@@ -578,9 +579,25 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
+  position: absolute;
   top: 50px;
   left: 0;
   width: 600px;
+}
+
+.main-content {
+  padding: 30px;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-color: white;
+  width: 40%;
+  position: relative;
+  margin-left: 23%;
+}
+
+.main-bg {
+  background-color: rgba(051, 043, 061, 0.5);
+  padding: 65px;
 }
 
 #home-slider .slide-text-rec{
@@ -588,6 +605,7 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
+  position: absolute;
   top: 50px;
   left: 0;
   width: 80%;
@@ -598,6 +616,7 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
+  position: absolute;
   top: 80px;
   left: 0;
   width: 450px;
@@ -608,23 +627,26 @@ ul.sub-menu {
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
+  position: absolute;
   top: 40px;
   left: 0;
   width: 80%;
 }
 
-#home-slider .html-docu{
+.html-docu{
   border: 5px solid lightgray;
   border-radius: 7px;
   background-color: lightgray;
-  width: 45%
 }
 
-#home-slider .html-docu-vista{
+.html-docu-vista{
   border: 5px solid grey;
   border-radius: 7px;
   background-color: grey;
-  width: 45%
+}
+
+.videogames {
+  text-align: center;
 }
 
 .animate-in .slide-text {
@@ -2853,4 +2875,108 @@ span.stButton_gradient,
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+}
+
+/*CSS Creado para ejemplos de ejercicio 2*/
+.img-ej2 {
+  width: 30%;
+}
+
+.css-example {
+	color: blue;
+}
+
+ul.ej2 {
+	list-style-type: circle;
+}
+
+p.ex1 {
+	display: none;
+}
+
+p.ex2 {
+	display: inline;
+}
+
+p.ex3 {
+	display: block;
+}
+
+p.ex4 {
+	display: inline-block;
+}
+
+.position-ej2 {
+	position: relative;
+	left: 10%;
+    top: 20%;
+}
+
+.margin-ej2 {
+    margin: 70px;
+    border: 5px solid lightblue;
+}
+
+.padding-ej2 {
+    padding: 70px;
+    border: 5px solid lightblue;
+}
+
+div.text1 {
+    text-align: center;
+}
+
+div.text2 {
+    text-align: left;
+}
+
+div.text3 {
+    text-align: right;
+} 
+
+div.text4 {
+    text-align: justify;
+} 
+
+.bg-ej2 { 
+    background-color: lightblue; 
+}
+
+.text-ej2 {
+    color: green;
+}
+
+.border-ej2 {
+    border-style: solid;
+    border-color: lightblue;
+	border-radius: 5px;
+}
+
+.box-shadow-ej2 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+
+p.serif-ej2 {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+p.sansserif-ej2 {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.media-ej2 {
+    background-color: blue;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .media-ej2 {
+        background-color: lightblue;
+    }
+}
+
+.bicks-tl {
+  text-align: center;
 }
