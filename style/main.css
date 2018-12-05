@@ -586,13 +586,13 @@ ul.sub-menu {
 }
 
 .main-content {
-  padding: 20px;
+  padding: 30px;
   border: 5px solid white;
   border-radius: 5px;
   background-color: white;
-  width: 38%;
+  width: 40%;
   position: relative;
-  margin-left: 22%;
+  margin-left: 23%;
 }
 
 .main-bg {
@@ -643,6 +643,10 @@ ul.sub-menu {
   border: 5px solid grey;
   border-radius: 7px;
   background-color: grey;
+}
+
+.videogames {
+  text-align: center;
 }
 
 .animate-in .slide-text {
@@ -2971,4 +2975,8 @@ p.sansserif-ej2 {
     .media-ej2 {
         background-color: lightblue;
     }
+}
+
+.bicks-tl {
+  text-align: center;
 }

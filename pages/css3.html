@@ -84,21 +84,7 @@
 						<ul class="nav navbar-nav navbar-right">
 							<li class="active"><a href="../index.html">Inicio</a></li>
 
-							<li class="dropdown"><a href="teoria.html">Teoría <i class="fa fa-angle-down"></i></a>
-								<ul role="menu" class="sub-menu">
-									<li><a href="tema001.html">Tema 1</a></li>
-									<!--
-									<li><a href="aboutus.html">About</a></li>
-									<li><a href="aboutus2.html">About 2</a></li>
-									<li><a href="service.html">Services</a></li>
-									<li><a href="pricing.html">Pricing</a></li>
-									<li><a href="contact.html">Contact us</a></li>
-									<li><a href="contact2.html">Contact us 2</a></li>
-									<li><a href="404.html">404 error</a></li>
-									<li><a href="coming-soon.html">Coming Soon</a></li>
-									-->
-								</ul>
-							</li>
+							
 
 							<li class="dropdown"><a href="practicas.html">Prácticas <i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
@@ -138,6 +124,12 @@
 									<li><a href="bootstrap.html">BootStrap</a></li>
 								</ul>
 							</li>
+
+							<li class="dropdown"><a href="videojuegos.html">VideoJuegos <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="bricks.html">Bricks</a></li>
+								</ul>
+							</li>
 							
 							<li><a href="cheetsheet.html ">Templ. CheetSheet</a></li>
 						</ul>
@@ -175,7 +167,7 @@
 										
 									<ul class="ej2">
 										<li><b>Selector "elemento":</b>
-										<br>Selecciona todos los elementos con el nombre del elemento especificado
+										<br>Selecciona todos los elementos con el nombre del elemento especificado.
 										<br>Syntax:
 <xmp class="html-docu">element {
  css declarations;
@@ -183,10 +175,36 @@
 										Ejemplo:
 										<br>Selecciona y estiliza todos los elementos &lt;p&gt; de la página, cambiando, en este caso, el color de las letras que esten contenidas en el elemento a azul.
 <xmp class="html-docu-vista">p {
-background-color: blue;
+ color: blue;
 }
 </xmp></li>
 										
+										<br><li><b>Selector "elemento, elemento":</b>
+										<br>Selecciona varios los elementos y los estiliza a todos de igual manera. Los elementos se separan con una coma.
+										<br>Syntax:
+<xmp class="html-docu">element, element {
+ css declarations;
+}</xmp>
+										Ejemplo:
+										<br>Selecciona y estiliza todos los elementos &lt;p&gt; y los elementos &lt;h1&gt; de la página, cambiando, en este caso, el color de las letras que esten contenidas en los elementos a azul.
+<xmp class="html-docu-vista">p, h1 {
+ color: blue;
+}
+</xmp></li>
+
+										<br><li><b>Selector "elemento elemento":</b>
+										<br>Selecciona elementos detro de otros elementos.
+										<br>Syntax:
+<xmp class="html-docu">element element {
+ css declarations;
+}</xmp>
+										Ejemplo:
+										<br>Selecciona y estiliza todos los elementos &lt;p&gt; que estén contenidos en elementos &lt;div&gt; de la página, cambiando, en este caso, el color de las letras a azul.
+<xmp class="html-docu-vista">div p {
+ color: blue;
+}
+</xmp></li>
+
 										<br><li><b>Selector "id":</b>
 										<br>Estiliza los elementos que contengan el id especificado con # en el archivo css.
 										<br>Syntax:
@@ -483,7 +501,7 @@ erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam,
 								</p>
 								
 								
-							<h1>""Decorando en css" Ejemplos de edición de las decoraciones de elementos web</h1>
+							<h1>"Decorando en css" Ejemplos de edición de las decoraciones de elementos web</h1>
 								
 								<p><h3>-Background:</h3>
 								Esta propiedas afecta en normas generales a cualquier fondo de cualquier elemento. Encontramos varias clases: background-color, background-image, background-position... etc.
