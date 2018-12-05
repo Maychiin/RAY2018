@@ -170,48 +170,488 @@
 							<p>
 								<h1><b>CSS3</b></h1>
 									<h1>"Conociendo las clases" Plantilla básica de la definición un conjunto de estilos css</h1>
+										<p><h3>-Selectores:</h3>
+										Los selectores de CSS se usan para "encontrar" (o seleccionar) elementos de HTML basados en sus elementos de nombre, id, clases, atributos, etc.. Algunos de los selectores más básicos, son los siguientes:</p>
+										
+									<ul class="ej2">
+										<li><b>Selector "elemento":</b>
+										<br>Selecciona todos los elementos con el nombre del elemento especificado
+										<br>Syntax:
+<xmp class="html-docu">element {
+ css declarations;
+}</xmp>
+										Ejemplo:
+										<br>Selecciona y estiliza todos los elementos &lt;p&gt; de la página, cambiando, en este caso, el color de las letras que esten contenidas en el elemento a azul.
+<xmp class="html-docu-vista">p {
+background-color: blue;
+}
+</xmp></li>
+										
+										<br><li><b>Selector "id":</b>
+										<br>Estiliza los elementos que contengan el id especificado con # en el archivo css.
+										<br>Syntax:
+<xmp class="html-docu">#id {
+ css declarations;
+}
+</xmp>
+										Ejemplo:
+										<br>En este caso, el estilo "background-color: yellow" solo se aplicará al elemento que tiene cómo id "fisrtname".
+<xmp class="html-docu-vista">CSS:
+#firstname {
+    background-color: yellow;
+}
 
-								 <xmp class="html-docu">
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+HTML
+ <p id="firstname">My name is Donald.</p>
+  <p id="hometown">I live in Duckburg.</p>
+</xmp>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+										<br><li><b>Selector "class":</b>
+										<br>El selector ".class" selecciona elementos que tengan este atributo especificado. Para ello, escribe "." seguido del nombre de la clase a la que quieres asignar un estilo. Puedes tambien afectar a un elemento específico escribiendo dicho elemento, seguido de "." y el nombre de la clase.
+										<br>Syntax:
+<xmp class="html-docu">.class {
+ css declarations;
+}
+</xmp>										
+										Ejemplo1:
+										<br>En este caso el color de fondo del elemento &lt;p&gt que contiene la clase "center" será azul.
+<xmp class="html-docu-vista">CSS:
+.center {
+ background-color blue;
+}
 
-</body>
-</html> 
-								 </xmp>
+HTML:
+ <p class="center">This is a paragraph.</p>
+ <p>This is other paragraph.</p>
+</xmp>
+										Ejemplo2:
+										<br>Así pues, cómo hemos mencionado antes podemos estilizar un elemento en concreto que contenga la clase, dejando fuera otro tipo de elementos que tengan la misma clase.
+<xmp class="html-docu">element.class {
+ css declarations;
+}
+</xmp>
+<xmp class="html-docu-vista">CSS:
+p.center {
+ background-color: blue;
+}
+
+HTML:
+<p class="center">This is a paragraph.</p>
+<div class="center">This paragraph is in another element.</div>
+</xmp>	
+										</li>
+									</ul>
+									
+									<h1>"Posicionamiento en css" Ejemplos del posicionamiento de elementos web usando css</h1>
+									<p><h3>-Display:</h3>
+									La propiedad "display" especifica el tipo de cuadro de representación utilizado para un elemento.
+									Tenemos varios tipo de display: none, inline, block, inline-block.. etc.
+									<br>Ejemplo:
+<xmp class="html-docu">CSS:
+p.ex1 {
+	display: none;
+}
+
+p.ex2 {
+	display: inline;
+}
+
+p.ex3 {
+	display: block;
+}
+
+p.ex4 {
+	display: inline-block;
+}
+
+HTML:
+<h1>The display Property</h1>
+
+<h2>display: none:</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+ erat pulvinar, at pulvinar felis blandit. <p class="ex1">HELLO WORLD!</p> 
+ Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h2>display: inline:</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+ erat pulvinar, at pulvinar felis blandit. <p class="ex2">HELLO WORLD!</p> 
+ Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h2>display: block:</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+ erat pulvinar, at pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> 
+ Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h2>display: inline-block:</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+ erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> 
+ Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div></xmp>
+
+									<div class="html-docu-vista">
+										<h1>The display Property</h1>
+
+										<h2>display: none:</h2>
+										<div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+										 erat pulvinar, at pulvinar felis blandit. <p class="ex1">HELLO WORLD!</p> 
+										 Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+										</div>
+
+										<h2>display: inline:</h2>
+										<div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+										 erat pulvinar, at pulvinar felis blandit. <p class="ex2">HELLO WORLD!</p> 
+										 Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+										</div>
+
+										<h2>display: block:</h2>
+										<div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+										 erat pulvinar, at pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> 
+										 Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+										</div>
+
+										<h2>display: inline-block:</h2>
+										<div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+										 erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> 
+										 Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+										</div>
+									</div>
+								</p>
+								
+								<p><h3>-Position:</h3>
+								<br>La porpiedad de "position" especifica el tipo de posisionamiento usado para un elemento (static, relative, absolute, fixed, or sticky).
+								Ejemplo:
+<xmp class="html-docu">CSS:
+h2 {
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+
+HTML:
+<h1>The position Property</h1>
+
+<h2>This is a heading with an absolute position</h2>
+
+<p>With absolute positioning, an element can be placed anywhere on a page. The 
+heading below is placed 100px from the left of the page and 150px from the top 
+of the page.</p>
+</xmp>
+
+								<div class="html-docu-vista">
+									<h1>The position Property</h1>
+
+									<h2 class="position-ej2">This is a heading with a relative position</h2>
+
+									<p>With absolute positioning, an element can be placed anywhere on a page. The 
+									heading below is placed 100px from the left of the page and 150px from the top 
+									of the page.</p>
+								</div>
+								</p>
+								
+								
+								<p><h3>-Margin:</h3>
+								Esta propiedad se usa para crear espacio al rededor de elementos, por fuera de cualquier borde definido. Se tiene control total sobre los margenes gracias a las propiedades para establecer margenes concretos a cada uno de los bordes del elemento (top, right, bottom, and left).
+								<br>Ejemplo:
+<xmp class="html-docu">CSS:
+.margin-ej2 {
+    margin: 70px;
+    border: 5px solid lightblue;
+}
+
+HTML:
+<div class="margin-ej2">This element has a margin of 70px.</div>
+</xmp>
+									
+									<div class="html-docu-vista">
+										<div class="margin-ej2">This element has a margin of 70px.</div>
+									</div>
+								</p>
+								
+								<p><h3>-Padding:</h3>
+								Esta propiedad se usa para general espacio al rededor del contenido de un elemento, por dentro de cualquier borde definido. Se tiene control total sobre el padding gracias a las propiedades para establecer el padding a cada uno de los bordes del elemento (top, right, bottom, and left).
+								<br>Ejemplo:
+<xmp class="html-docu">CSS:
+.padding-ej2 {
+    padding: 70px;
+    border: 5px solid lightblue;
+}
+
+HTML:
+<div class="padding-ej2">This element has a margin of 70px.</div>
+</xmp>								
+								
+									<div class="html-docu-vista">
+										<div class="padding-ej2">This element has a margin of 70px.</div>
+									</div>
+								</p>
+								
+								
+								<p><h3>-Text-align:</h3>
+								Esta propiedad especifica la alineación horizontal del texto en un elemento.
+								<br>Ejemplo:
+<xmp class="html-docu">CSS:
+div.text1 {
+    text-align: center;
+}
+
+div.text2 {
+    text-align: left;
+}
+
+div.text3 {
+    text-align: right;
+} 
+
+div.text4 {
+    text-align: justify;
+} 
+
+HTML:
+<h1>The text-align Property</h1>
+
+<div class="text1">
+<h2>text-align: center:</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at 
+erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, 
+consequat gravida libero rhoncus ut.</p>
+</div>
+
+<div class="text2">
+<h2>text-align: left:</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at 
+erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam,
+ consequat gravida libero rhoncus ut.</p>
+</div>
+
+<div class="text3">
+<h2>text-align: right:</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+ erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, 
+ consequat gravida libero rhoncus ut.</p>
+</div>
+
+<div class="text4">
+<h2>text-align: justify:</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+ erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, 
+ consequat gravida libero rhoncus ut.</p>
+</div>
+</xmp>																
+								
+								<div class="html-docu-vista">
+									<h1>The text-align Property</h1>
+
+									<div class="text1">
+									<h2>text-align: center:</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at 
+									erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, 
+									consequat gravida libero rhoncus ut.</p>
+									</div>
+
+									<div class="text2">
+									<h2>text-align: left:</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at 
+									erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam,
+									 consequat gravida libero rhoncus ut.</p>
+									</div>
+
+									<div class="text3">
+									<h2>text-align: right:</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+									 erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, 
+									 consequat gravida libero rhoncus ut.</p>
+									</div>
+
+									<div class="text4">
+									<h2>text-align: justify:</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at
+									 erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, 
+									 consequat gravida libero rhoncus ut.</p>
+									</div>
+								</div>
+								</p>
+								
+								
+							<h1>""Decorando en css" Ejemplos de edición de las decoraciones de elementos web</h1>
+								
+								<p><h3>-Background:</h3>
+								Esta propiedas afecta en normas generales a cualquier fondo de cualquier elemento. Encontramos varias clases: background-color, background-image, background-position... etc.
+								<br>Ejemplo:
+<xmp class="html-docu">CSS:
+.bg-ej2 { 
+    background-color: lightblue; 
+}
+
+HTML:
+<div class="bg-ej2">
+<h1>The background Property</h1>
+
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+</div>
+</xmp>									
+									<div class="html-docu-vista">
+										<div class="bg-ej2">
+											<h1>The background Property</h1>
+
+											<p>This is some text</p>
+											<p>This is some text</p>
+											<p>This is some text</p>
+											<p>This is some text</p>
+											<p>This is some text</p>
+											<p>This is some text</p>
+											<p>This is some text</p>
+										</div>
+									</div>
+								</p>
 								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
-								 
+								<p><h3>-Background:</h3>
+								Esta propiedad especifica el color del texto de un elemento.
+								<br>Ejemplo:
+<xmp class="html-docu">CSS:
+.text-ej2 {
+    color: green;
+}
+
+HTML:
+<p class="text-ej2">Hello world!</p>
+</xmp>								
+									<div class="html-docu-vista">
+										<p class="text-ej2">Hello world!</p>
+									</div>
+								</p>
+								
+								<p><h3>-Border:</h3>
+								Esta propuedad te permite especificar el estilo, tamaño, y color del borde de un elemento.
+								<br>Ejemplo:
+<xmp class="html-docu">CSS:
+.border-ej2 {
+    border-style: solid;
+    border-color: lightblue;
+	border-radius: 5px;
+}
+
+
+HTML:
+<p class="border-ej2">A solid light blue border</p>
+</xmp>								
+									<div class="html-docu-vista">
+										<p class="border-ej2">A solid light blue border</p>
+									</div>
+								
+								</p>
+								
+								
+								<p><h3>-Box-shadow :</h3>
+								Esta propiedad adjunta una o más sobras  aun elemnto.
+								<br>Ejemplo:
+<xmp class="html-docu">CSS:
+.box-shadow-ej2 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+
+
+HTML:
+<h2>box-shadow: 5px 10px:</h2>
+<div class="box-shadow-ej2">
+<p>A div element with a shadow. The first value is the horizontal offset and
+ the second value is the vertical offset. The shadow color will be inherited
+ from the text color.</p>
+</div>
+</xmp>									
+									<div class="html-docu-vista">
+										<h2>box-shadow: 5px 10px:</h2>
+										<div class="box-shadow-ej2">
+										<p>A div element with a shadow. The first value is the horizontal offset and the second value is the vertical offset. The shadow color will be inherited from the text color.</p>
+										</div>
+									</div>
+								
+								</p>
+								
+								
+								<p><h3>-Font:</h3>
+								Esta propiedad define la familia tipográfica, tamaño, estilo.. de un texto.
+								<br>Ejemplo:
+<xmp class="html-docu">CSS:
+p.serif-ej2 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif-ej2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+HTML:
+<h1>CSS font-family</h1>
+<p class="serif-ej2">This is a paragraph, shown in the Times New Roman font.</p>
+<p class="sansserif-ej2">This is a paragraph, shown in the Arial font.</p>
+</xmp>										
+									<div class="html-docu-vista">
+										<h1>CSS font-family</h1>
+										<p class="serif-ej2">This is a paragraph, shown in the Times New Roman font.</p>
+										<p class="sansserif-ej2">This is a paragraph, shown in the Arial font.</p>
+									</div>
+								
+								</p>
+								
+								
+								<h1>"Media queries"</h1> 
+								<p>
+								Ejemplo del uso de distintas configuraciones de estilos según la resolución de la pantalla en la que se vea:
+<xmp class="html-docu">CSS:
+.media-ej2 {
+    background-color: blue;
+    color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+    .media-ej2 {
+        background-color: lightblue;
+    }
+}
+
+
+HTML:
+<div class="media-ej2">
+<h1>The @media Rule</h1>
+
+<p>Resize the browser window. When the width of this document is 600 pixels or 
+less, the background-color is "lightblue", otherwise it is "blue".</p>
+</div>
+</xmp>									
+								<div class="html-docu-vista">
+									<div class="media-ej2">
+										<h1>The @media Rule</h1>
+
+										<p>Resize the browser window. When the width of this document is 600 pixels or 
+										less, the background-color is "lightblue", otherwise it is "blue".</p>
+									</div>
+								</div>
+								
+								</p>
+								
+								<br><br><a href="recursos.html" class="btn btn-common">Recursos</a> 
+							<a href="html5.html" class="btn btn-common">HTML5</a> <a href="#" class="btn btn-common">Estás aquí</a> <a href="bootstrap.html" class="btn btn-common">Bootstrap</a></p>
+
 							</p>
 							<!--<a href="#" class="btn btn-common">Empecemos</a>-->
 						</div>
