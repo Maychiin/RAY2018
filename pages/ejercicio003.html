@@ -8,12 +8,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Videojuegos | RAY 2018</title>
+		<title>Ejercicio 3 | RAY 2018</title>
 		<meta name="description" content="Contenido, teoría y ejercicios de la asignatura RAY - 2018">
 		<meta name="author" content="G.R.P.">
 
 		<!-- Enlaces a archivos externos que definen estilos css -->
-		<link href="../style/bricks.css" rel="stylesheet">
 		<link href="../style/bootstrap.min.css" rel="stylesheet">
 		<link href="../style/font-awesome.min.css" rel="stylesheet">
 		<link href="../style/animate.min.css" rel="stylesheet"> 
@@ -91,7 +90,7 @@
 								<ul role="menu" class="sub-menu">
 									<li><a href="ejercicio001.html">Ejercicios 1</a></li>
 									<li><a href="ejercicio002.html">Ejercicios 2</a></li>
-									<li><a href="ejercicio003.html">Ejercicios 3</a></li>
+									<li><a href="#">Ejercicios 3</a></li>
 
 									<!--
 									<li><a href="blog.html">Blog Default</a></li>
@@ -123,13 +122,13 @@
 								<ul role="menu" class="sub-menu">
 									<li><a href="html5.html">HTML5</a></li>
 									<li><a href="css3.html">CSS3</a></li>
-									<li><a href="#">BootStrap</a></li>
+									<li><a href="bootstrap.html">BootStrap</a></li>
 								</ul>
 							</li>
 
 							<li class="dropdown"><a href="videojuegos.html">VideoJuegos <i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
-									<li><a href="#">Bricks</a></li>
+									<li><a href="bricks.html">Bricks</a></li>
 									<li><a href="jumprace.html">Jump Race</a></li>
 									<li><a href="snake.html">Snake</a></li>
 									<li><a href="drivefast.html">Drive Fast</a></li>
@@ -159,24 +158,22 @@
 		<!-- ================================================================================================================ -->
 
 		<!-- ================================================================================================================ -->
-		<section class="main-bg">
-			<div class="container main-content">
+		<section id="home-slider">
+			<div class="container">
 				<div class="row">
-					<div class="main-slider-ej2">
-						<div class="slide-text-rec">
-							<p>
-								<h1 class="bicks-tl">Bricks</h1>
-								<section id="game-section">
-									<div id="gameBackground"></div>
-									<canvas id="gameCanvas" width="480" height="320"></canvas>
-									<div id="gameButtonsSec">
-									<button id="reloadButton" type="button" onclick="reload();">Recargar</button> 
-									<button id="initButton" type="button" onclick="init();">Iniciar</button>
-									</div>
-								<br><h2 class="bricks-tl">Have fun!</h2>
-								</section>
-							</p>
-							<!--<a href="#" class="btn btn-common">Empecemos</a>-->
+					<div class="main-slider">
+						<div class="slide-text-ej1">
+							<h1>Ejercicio 3 - <b>Práctica de evaluación</b></h1>
+								<p>Jornada de evaluación de la web personal de cada alumno, creada en los ejercicios 1 y 2. 
+									<br>Se pedirá la entrega de los ejercicios completos y la realización de una modificación a realizar en clase. 
+									Todo ello subido en github, haciendo uso del servicio gratuito "GitHub Pages"
+
+
+								<br><br>- Ejercicios 1 y 2 (5 puntos)
+								<br>- Modificación (3 puntos)
+								<br>- Claridad y orden de las estructuras y el código (2 puntos)
+								<br><a href="bricks.html" class="btn btn-common" target="_blank">Brick Game</a>
+								</p>
 						</div>
 
 						<img src="" class="slider-hill" alt="">
@@ -196,7 +193,7 @@
 		<footer id="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12 text-center bottom-separator-rec">
+					<div class="col-sm-12 text-center bottom-separator">
 						<img src="" class="img-responsive inline" alt="">
 					</div>
 					
@@ -280,7 +277,6 @@
 
 		<!-- ================================================================================================================ -->
 		<!-- Carga "tardía" de librerías de scripts externos -->
-		<script type="text/javascript" src="../script/bricks.js"></script>
 		<script type="text/javascript" src="../script/jquery.js"></script>
 		<script type="text/javascript" src="../script/bootstrap.min.js"></script>
 		<script type="text/javascript" src="../script/lightbox.min.js"></script>
