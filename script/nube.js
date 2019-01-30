@@ -30,9 +30,14 @@ function updateGame() {
 	
 	game_context.clearRect(0, 0, game_canvas.width, game_canvas.height);
 
-	game_context.fillStyle = "red"; //Color del "pincel" con el que se pinta.
-	game_context.fillRect(50, 50, 100, 100);
+	//game_context.fillStyle = "red"; //Color del "pincel" con el que se pinta.
+	//game_context.fillRect(50, 50, 100, 100);
 	//(x, y, Ancho, largo)
+
+	game_context.fillStyle = "red";
+	game_context.beginPath();
+	game_context.arc(100, 100, 50, 0, 2 * Math.PI);
+	game_context.fill();
 
 	game_context.fillStyle = "pink";
 	cloudx = cloudx - 3;
