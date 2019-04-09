@@ -186,7 +186,10 @@ function initScreen(){
 
 function helpScreen (){
     drawHeaderComponent();
-    drawDescriptionComponent("Ayuda: ...");
+    drawDescriptionComponent("Ayuda:");
+    drawText (35,125,"-Pulsa 'W' para elevarte.")
+    drawText (35,150, "-Pulsa 'esc' para empezar de nuevo si chocas.")
+    drawText (35,200, "Good luck, have fun, don't die.")
     drawFooterComponent("Presiona 'esc' para volver");
     
 }
@@ -281,7 +284,7 @@ function flappyBird() {
 	}
 	
 	this.startGame = function () {
-		that.myGamePiece = new that.component(30, 30, "red", this.myGameArea.canvas.width - 40, 120);
+		that.myGamePiece = new that.component(30, 30, "#76bdd5", this.myGameArea.canvas.width - 40, 120);
 		that.myGamePiece.gravity = 0.05;
 		that.myScore = new that.component("30px", "Consolas", "black", 280, 40, "text");
 		that.myGameArea.start();
@@ -316,8 +319,8 @@ function flappyBird() {
 			minGap = 50;
 			maxGap = 200;
 			gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-			that.myObstacles.push(new that.component(10, height, "green", x, 0));
-			that.myObstacles.push(new that.component(10, that.myGameArea.canvas.width - height - gap, "green", x, height + gap));
+			that.myObstacles.push(new that.component(10, height, footerBackColor, x, 0));
+			that.myObstacles.push(new that.component(10, that.myGameArea.canvas.width - height - gap, "#1e1449", x, height + gap));
 		}
 		for (i = 0; i < that.myObstacles.length; i += 1) {
 			that.myObstacles[i].x += 1;
@@ -344,13 +347,6 @@ function flappyBird() {
 //------------------------------
 //Draw functions
 //------------------------------
-
-function drawBird (x, y, width, height, color) {
-    game_context.fillStyle = color;
-    game_context.fillRect(x,y,width,height);
-    
-}
-
 
 function drawHeaderComponent(){
     
